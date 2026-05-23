@@ -1,5 +1,6 @@
 import tensorflow as tf
-from tensorflow.keras import layers, models
+import tf_keras as keras
+from tf_keras import layers, models
 import os
 
 def create_model():
@@ -47,3 +48,5 @@ if __name__ == "__main__":
     model_path = 'model.h5'
     model.save(model_path)
     print(f"Saved dummy model to {os.path.abspath(model_path)}")
+
+
